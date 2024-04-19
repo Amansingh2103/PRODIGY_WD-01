@@ -1,0 +1,106 @@
+<html>
+<head>
+<style>
+
+.nav {
+  text-align: center; 
+  width: 100%; 
+  background-color: #333; 
+  overflow: hidden; 
+  position: relative;
+  
+}
+
+
+.nav a {
+  float: left; 
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 14px 16px; 
+  text-decoration: none; 
+  
+
+}
+
+.nav a:hover {
+  background-color: #111; 
+  color: yellow; 
+}
+
+
+.nav a:active {
+  background-color: green; 
+  color: white; 
+}
+
+.nav-scrolled {
+  background-color: #555; 
+  color: white; 
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; 
+  background-image: url("./bg.jpg");
+}
+
+.content {
+  margin-top: 60px;
+  text-align: center; 
+  color: rgb(161, 88, 220);
+  position: center;
+  padding: 1%;
+}
+</style>
+<script>
+function scrollFunction() {
+
+  var nav = document.getElementById("nav");
+   scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+  
+  if (scrollPos > 0) {
+    nav.classList.add("nav-scrolled");
+  }
+  
+  else {
+    nav.classList.remove("nav-scrolled");
+  }
+}
+
+
+window.addEventListener("scroll", scrollFunction);
+</script>
+</head>
+<body>
+<div id="nav" class="nav">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="#help">Help</a>
+</div>
+
+
+
+
+
+
+<div class="content">
+<h1>Interactive Navigation Menu</h1>
+<p>The following text is a description of an interactive navigation menu that I have created for a website.
+  Positioned fixedly at the top of every page, it ensures easy access to various sections like Home, About,
+   Services, and Contact. The menu features a sleek design with a white background and black text for a clean 
+   appearance. However, it incorporates interactive elements to enhance user experience.
+  As the user scrolls down, the menu dynamically adjusts its appearance, transitioning to a light gray background
+   with dark gray text, offering visual contrast against the page content. Hovering over menu items triggers a 
+   style change, rendering the text bold and blue to signify clickability. Upon clicking a menu item, it remains
+   highlighted in blue until another item is clicked or the user scrolls away, aiding navigation continuity.
+  These interactive functionalities are implemented using HTML for structure, CSS for styling, and JavaScript
+   for event handling and DOM manipulation. This combination ensures seamless user interaction and navigation
+    throughout the website.</p>
+</div>
+
+</body>
+</html>
+```
